@@ -7,6 +7,16 @@ body{
     overflow-x:hidden;
 }
 
+h2{
+	line-height: 160%;
+}
+
+ul{
+	list-style:none;
+}
+p{
+	line-height: 200%;
+}
 .login a{
 	text-decoration: underline;
 }
@@ -25,7 +35,7 @@ header .logo{
 header .top{
 	height: 50px;
     background: #F4F4F4;
-    padding: 5px 15px 0px 15px;
+    padding: 15px 15px 0px 15px;
 }
 
 header .top .slogan{
@@ -139,4 +149,242 @@ header nav.main ul li.search span:before {
 	display:block;
 	text-indent: -34em;
 	height: 60px;
+}
+
+.block{
+	width: 100%;
+	margin: 20px 0px;
+}
+
+.block .inner{
+	width: 80%;
+	margin-left: 10%
+}
+
+.block .inner .grid  .col {
+	float:left;
+	margin: 1%;
+}
+
+.n-6{
+	max-width: 48%;
+}
+
+.n-6 .rollover{
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.n-6 figure .label.developer{
+	position: absolute;
+	top: 55%;
+	width: 60px;
+	display: block;
+	height: 165px;
+	background: url(http://www.awwwards.com/bundles/tvweb/images/label-developer.svg) no-repeat;
+	text-indent: -20em;
+	z-index: 100;
+}
+
+.n-6 .sect.header{
+	margin-bottom: 50px;
+}
+
+.n-6 .header .date{
+    letter-spacing: 2px;
+}
+
+.n-6 .header a{
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	font-family: 'MuseoSans_xFat';
+	letter-spacing: 1px;
+}
+
+.n-6 .header .bold{
+	font-size: 25px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0.2em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.n-6 .header .by{
+	float: left;
+}
+.n-6 .header .add-like{
+	float: right;
+}
+
+.n-6 .header .add-like .total:after {
+    content: '\2665';
+    position: absolute;
+    font-size: 25px;
+    font-family: 'icons';
+    font-size: 18px;
+    margin-left: 3px;    
+    line-height: 15px;
+}
+
+.n-6 .sect.notes{
+	width: 100%;
+    height: 175px;
+    border-top: 1px solid #d2d6d5;
+    border-bottom: 1px solid #d2d6d5;
+}
+.n-6 .sect.jury{
+	border-bottom: 1px solid #d2d6d5;
+}
+.progressbar .circle {
+    position: relative;
+    height: 70px;
+}
+.progressbar .percent {
+    position: absolute;
+    top: 23px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 25px;
+}
+.progressbar .wrap{
+	text-align: center;
+}
+.progressbar .dec {
+    font-size:15px;
+}
+
+/* BOX-NOTESITE */
+
+.box-notesite ul li {
+    float: left;
+    margin-right: 10px;
+    list-style:none;
+}
+
+.box-notesite ul{
+	-webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+.box-notesite ul li.progressbar {
+    width: 115px;
+    height: 150px;
+}
+
+.box-sot .sect.jury > ul{
+    height: 70px;
+}
+.box-sot .sect.jury > ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.box-sot .sect.jury > ul > li {
+    position: relative;
+    float: left;
+    margin-right: 2px;
+}
+.box-sot .sect.jury > ul > li:last-child {
+    margin-right: 0;
+}
+.box-sot .sect.jury > ul > li img:hover {
+    opacity: 0.7;
+}
+.tooltip{
+    visibility: hidden;
+    position: absolute;
+    top: -130px;
+    left: -56px;
+    padding: 15px;
+    background: #444;
+    font-size: 13px;
+    color: #FFF;
+    opacity: 0;
+    z-index: 2;
+    line-height: 22px;
+
+    -webkit-transition: opacity .4s linear, top .2s linear;
+}
+
+.tooltip:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 0;
+    width: 0;
+    margin-left: -5px;
+    border: solid rgba(0, 0, 0, 0);
+    border-top-color: #444;
+    border-width: 8px 5px 8px 5px;
+}
+.box-sot .sect.jury ul li .tooltip {
+    width: 150px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.box-sot .sect.jury ul li .tooltip .name{
+	clear:both;
+	float:left;
+}
+.box-sot .sect.jury ul li .tooltip .country {
+    color: #3c948b;
+    clear:both;
+    float:left;
+}
+.box-sot .sect.jury ul li:hover .tooltip {
+	top: -80px;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.list-notes{
+	float:left;
+	clear:both;
+	margin-top: 5px;
+}
+
+.list-notes li{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    line-height:21px;
+    text-align:center;
+    font-size: 13px;
+    color:#fff;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    
+}
+.list-notes li.design{
+    border-color:#DF6C4F;
+}
+.list-notes li.creativity{
+    border-color:#3c948b;
+}
+.list-notes li.usability{
+    border-color:#ECD06F;
+}
+.list-notes li.content{
+    border-color:#1A99AA;
+}
+
+.list-notes ul{
+	-webkit-padding-start: 0px;
+}
+
+.grid.box-sot.one-row{
+	height: 520px;
+}
+.grid{
+margin-bottom: 50px;
+    margin-top: 40px;
 }
